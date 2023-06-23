@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Porcentagem</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a class="link_cabecalho" href="index.html">Início</a>
+            <a class="link_cabecalho" href="Dúvidas.html">Dúvidas</a>
+            <a class="link_cabecalho" href="videos.html">Vídeos</a>
+            <a class="link_cabecalho" href="questionário.html">Quiz</a>
+        </div>
+    </header>
+    <main>
+        <h1 class="titulo">Calculadora de Porcentagem</h1>
+
+        <div id="container">
+            <h4 class="subtitulo3">Música para concentração</h4>
+            <div class="audio">
+                <audio src="ruido2.mpeg" controls>
+                </audio>
+
+            </div>
+            <div class="box_calculadora">
+                <div class="valores_buton">
+                    <div class="valores">
+                        <input type="number" id="num1">
+                        <label>% de</label>
+                        <input type="number" id="num2">
+                    </div><!--valores-->
+
+                    <button id="btn">Calcular</button>
+                    <h3 class="resultado" id="resultado"></h3>
+                </div>
+                <div class="apresentacao">
+                    <div class="formula" id="formula">Aqui aparecerá o passo a passo:</div>
+                    <div class="linha"></div>
+                    <div class="Boxchart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div><!--apresentacao-->
+            </div><!--box_calculadora-->
+
+            <!--outro boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooox-->
+
+            <div class="box_calculadora">
+                <div class="valores_buton">
+                    <h3 class="subtitulo">Para o equivalente em Porcentagem</h3>
+                    <div class="valores">
+                        <input type="number" id="valor1">
+                        <label>de um total de</label>
+                        <input type="number" id="valor2">
+                    </div><!--valores-->
+
+                    <button id="btn2">Calcular</button>
+                    <h3 class="resultado" id="resultado2"></h3>
+                </div>
+                <div class="apresentacao">
+                    <div class="formula" id="formula2">Aqui aparecerá o passo a passo:</div>
+                    <div class="linha"></div>
+                    <div class="Boxchart">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div><!--apresentacao-->
+            </div><!--box_calculadora-->
+            <h3 class="subtitulo2">Pegue seu caderno e pratique com o minijogo!</h3>
+            <div class="scratch">
+                <iframe src="https://scratch.mit.edu/projects/866460706/embed" allowtransparency="true" width="685"
+                    height="602" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+
+        </div><!--Container-->
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

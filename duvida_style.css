@@ -1,0 +1,76 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+
+/* cabecalho div*/
+header {
+  padding: 20px;
+  background-image: linear-gradient(to right, rgb(199,255,248), rgb(0,149,255));
+}
+.link_cabecalho {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: 20px;
+    font-weight: bold ;
+}
+
+.cabecalho {
+    display: flex;
+    gap: 30px;
+    justify-content: right;
+}
+
+h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+
+
+/* botãon das perguntas */
+.questao .questao-titulo {
+    display: inline-block;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 20px; /* arredondar */
+    transition: background-color 0.3s, color 0.3s; /* mudança d cor */
+  }
+  
+  .questao .questao-titulo:hover {
+    background-color: #afd7f0; /* muda a cor */
+    color: #ffffff; 
+  }
+  
+  /* resposta */
+  .resposta {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+    border-radius: 5px; /* arredondar resposta */
+    margin-bottom: 10px;
+  }
+  
+  .resposta.show {
+    display: block;
+  }
